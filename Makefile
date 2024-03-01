@@ -78,16 +78,16 @@ LANG_TYPE ?=
 ifeq ($(LANG_TYPE),Indic)
 	NORM_MODE =2
 	RECODER =--pass_through_recoder
-	GENERATE_BOX_SCRIPT =generate_wordstr_box.py
+	GENERATE_BOX_SCRIPT =generate_wordstr_box
 else
 ifeq ($(LANG_TYPE),RTL)
 	NORM_MODE =3
 	RECODER =--pass_through_recoder --lang_is_rtl
-	GENERATE_BOX_SCRIPT =generate_wordstr_box.py
+	GENERATE_BOX_SCRIPT =generate_wordstr_box
 else
 	NORM_MODE =2
 	RECODER=
-	GENERATE_BOX_SCRIPT =generate_line_box.py
+	GENERATE_BOX_SCRIPT =generate_line_box
 endif
 endif
 
@@ -102,13 +102,6 @@ RATIO_TRAIN := 0.90
 
 # Default Target Error Rate. Default: $(TARGET_ERROR_RATE)
 TARGET_ERROR_RATE := 0.01
-
-#Use corrent python program name on Windows
-ifeq ($(OS),Windows_NT)
-    PY_CMD := python
-else
-    PY_CMD := python3
-endif
 
 # BEGIN-EVAL makefile-parser --make-help Makefile
 
@@ -226,25 +219,25 @@ $(ALL_GT): $(ALL_FILES) | $(OUTPUT_DIR)
 
 .PRECIOUS: %.box
 %.box: %.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(PY_CMD) $(GENERATE_BOX_SCRIPT) -i "$*.png" -t "$*.gt.txt" > "$@"
+	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.bin.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(PY_CMD) $(GENERATE_BOX_SCRIPT) -i "$*.bin.png" -t "$*.gt.txt" > "$@"
+	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.bin.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.nrm.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(PY_CMD) $(GENERATE_BOX_SCRIPT) -i "$*.nrm.png" -t "$*.gt.txt" > "$@"
+	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.nrm.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.raw.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(PY_CMD) $(GENERATE_BOX_SCRIPT) -i "$*.raw.png" -t "$*.gt.txt" > "$@"
+	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.raw.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.tif %.gt.txt
-	PYTHONIOENCODING=utf-8 $(PY_CMD) $(GENERATE_BOX_SCRIPT) -i "$*.tif" -t "$*.gt.txt" > "$@"
+	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.tif" -t "$*.gt.txt" > "$@"
 
 $(ALL_LSTMF): $(ALL_FILES:%.gt.txt=%.lstmf)
 	$(if $^,,$(error found no $(GROUND_TRUTH_DIR)/*.lstmf for $@))
 	@mkdir -p $(@D)
 	$(file >$@) $(foreach F,$^,$(file >>$@,$F))
-	$(PY_CMD) shuffle.py $(RANDOM_SEED) "$@"
+	tess_shuffle $(RANDOM_SEED) "$@"
 
 .PRECIOUS: %.lstmf
 %.lstmf: %.png %.box

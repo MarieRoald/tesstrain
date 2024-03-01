@@ -18,17 +18,16 @@ and more can be found in the [Tesseract User Manual](https://tesseract-ocr.githu
 
 #### Windows
 
-  1. Install the latest tesseract (e.g. from https://digi.bib.uni-mannheim.de/tesseract/), make sure that tesseract is added to your PATH.
-  2. Install [Python 3](https://www.python.org/downloads/)
-  3. Install [Git SCM to Windows](https://gitforwindows.org/) - it provides a lot of linux utilities on Windows (e.g. `find`, `unzip`, `rm`) and put `C:\Program Files\Git\usr\bin` to the begining of your PATH variable (temporarely you can do it in `cmd` with `set PATH=C:\Program Files\Git\usr\bin;%PATH%` - unfornatelly there are several Windows tools with the same name as on linux (`find`, `sort`) with different behaviour/functionality and there is need to avoid them during training.
-  4. Install winget/[Windows Package Manager](https://github.com/microsoft/winget-cli/releases/) and then run `winget install GnuWin32.Make` and `winget install wget` to install missing tools.
-  5. Download [Bc and dc calculator in Windows](https://embedeo.org/ws/command_line/bc_dc_calculator_windows/) and unzip bc.exe somewhere to your path (e.g. in my case `unzip -j bc-1.07.1-win32-embedeo-02.zip "bc-1.07.1-win32-embedeo-02/bin/bc.exe" -d "c:\Program Files\Tools"`)
+1. Install the latest tesseract (e.g. from <https://digi.bib.uni-mannheim.de/tesseract/>), make sure that tesseract is added to your PATH.
+2. Install [Python 3](https://www.python.org/downloads/)
+3. Install [Git SCM to Windows](https://gitforwindows.org/) - it provides a lot of linux utilities on Windows (e.g. `find`, `unzip`, `rm`) and put `C:\Program Files\Git\usr\bin` to the begining of your PATH variable (temporarely you can do it in `cmd` with `set PATH=C:\Program Files\Git\usr\bin;%PATH%` - unfornatelly there are several Windows tools with the same name as on linux (`find`, `sort`) with different behaviour/functionality and there is need to avoid them during training.
+4. Install winget/[Windows Package Manager](https://github.com/microsoft/winget-cli/releases/) and then run `winget install GnuWin32.Make` and `winget install wget` to install missing tools.
+5. Download [Bc and dc calculator in Windows](https://embedeo.org/ws/command_line/bc_dc_calculator_windows/) and unzip bc.exe somewhere to your path (e.g. in my case `unzip -j bc-1.07.1-win32-embedeo-02.zip "bc-1.07.1-win32-embedeo-02/bin/bc.exe" -d "c:\Program Files\Tools"`)
 
 ### Python
 
 You need a recent version of Python 3.x. For image processing the Python library `Pillow` is used.
 If you don't have a global installation, please use the provided requirements file `pip install -r requirements.txt`.
-
 
 ### Language data
 
@@ -39,7 +38,6 @@ To fetch them:
 
 (This step is only needed once and already included implicitly in the `training` target,
 but you might want to run explicitly it in advance.)
-
 
 ## Choose model name
 
@@ -79,15 +77,14 @@ Run
 
     make training MODEL_NAME=name-of-the-resulting-model
 
-
 which is basically a shortcut for
 
     make unicharset lists proto-model tesseract-langdata training
 
-
 Run `make help` to see all the possible targets and variables:
 
 <!-- BEGIN-EVAL -w '```' '```' -- make help -->
+
 ```
 
   Targets
@@ -175,16 +172,18 @@ Training and Evaluation CER can be plotted using matplotlib. A couple of scripts
 as a starting point in `plot` subdirectory for plotting of different training scenarios. The training
 log is expected to be saved in `plot/TESSTRAIN.LOG`.
 
-As an example, use the training data provided in 
+As an example, use the training data provided in
 [ocrd-testset.zip](./ocrd-testset.zip) to do training and generate the plots.
 Plotting can be done while training is running also to depict the training status till then.
-```
+
+```sh
 unzip ocrd-testset.zip -d data/ocrd-ground-truth
 nohup make training MODEL_NAME=ocrd START_MODEL=frk TESSDATA=~/tessdata_best MAX_ITERATIONS=10000 > plot/TESSTRAIN.LOG &
 ```
-```
+
+```sh
 cd ./plot
-./plot_cer.sh 
+./plot_cer.sh
 ```
 
 ## License

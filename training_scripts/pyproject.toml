@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "tess-training-scripts"
+version = "0.1.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pillow = "^10.2.0"
+matplotlib = "^3.8.3"
+pandas = "^2.2.1"
+
+[tool.poetry.scripts]
+generate_wordstr_box = "tess_training_scripts.generate_wordstr_box:main"
+generate_gt_from_box = "tess_training_scripts.generate_gt_from_box:main"
+generate_line_box = "tess_training_scripts.generate_line_box:main"
+generate_line_syllable_box = "tess_training_scripts.generate_line_syllable_box:main"
+tess_normalize = "tess_training_scripts.normalize:main"
+tess_shuffle = "tess_training_scripts.shuffle:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "F", #Pyflakes
+    "B", #flake8-bugbear
+    "A", #flake8-builtins 
+    "C4", #flake8-comprehensions
+    "ERA", #eradicate
+    "I", #isort
+    "PT", #flake8-pytest-style
+    "C90", #mccabe
+    "N", #pep8-naming
+    "E", #pycodestyle error
+    "PL" #Pylint
+]
+ignore = ["A003"]
