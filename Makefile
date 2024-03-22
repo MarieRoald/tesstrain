@@ -19,7 +19,7 @@ TESSDATA =  $(LOCAL)/share/tessdata
 MODEL_NAME = foo
 
 # Data directory for output files, proto model, start model, etc. Default: $(DATA_DIR)
-DATA_DIR = data
+DATA_DIR = training-data
 
 # Data directory for langdata (downloaded from Tesseract langdata repo). Default: $(LANGDATA_DIR)
 LANGDATA_DIR = $(DATA_DIR)/langdata
