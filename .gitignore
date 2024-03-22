@@ -20,6 +20,6 @@ master.zip
 main.zip
 plot/*.LOG
 plot/ocrd*
-
+.DS_Store
 # ignore temporary training data
 *checkpoints*
