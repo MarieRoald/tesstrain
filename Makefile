@@ -359,12 +359,12 @@ $(TESSDATA)/%.traineddata:
 # Clean generated .box files
 .PHONY: clean-box
 clean-box:
-	find -L $(GROUND_TRUTH_DIR) -name '*.box' -delete
+	find $(GROUND_TRUTH_DIR) -name '*.box' -delete
 
 # Clean generated .lstmf files
 .PHONY: clean-lstmf
 clean-lstmf:
-	find -L $(GROUND_TRUTH_DIR) -name '*.lstmf' -delete
+	find $(GROUND_TRUTH_DIR) -name '*.lstmf' -delete
 
 # Clean generated output files
 .PHONY: clean-output
