@@ -219,19 +219,19 @@ $(ALL_GT): $(ALL_FILES) | $(OUTPUT_DIR)
 
 .PRECIOUS: %.box
 %.box: %.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.png" -t "$*.gt.txt" > "$@"
+	$(GENERATE_BOX_SCRIPT) -i "$*.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.bin.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.bin.png" -t "$*.gt.txt" > "$@"
+	$(GENERATE_BOX_SCRIPT) -i "$*.bin.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.nrm.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.nrm.png" -t "$*.gt.txt" > "$@"
+	$(GENERATE_BOX_SCRIPT) -i "$*.nrm.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.raw.png %.gt.txt
-	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.raw.png" -t "$*.gt.txt" > "$@"
+	$(GENERATE_BOX_SCRIPT) -i "$*.raw.png" -t "$*.gt.txt" > "$@"
 
 %.box: %.tif %.gt.txt
-	PYTHONIOENCODING=utf-8 $(GENERATE_BOX_SCRIPT) -i "$*.tif" -t "$*.gt.txt" > "$@"
+	$(GENERATE_BOX_SCRIPT) -i "$*.tif" -t "$*.gt.txt" > "$@"
 
 $(ALL_LSTMF): $(ALL_FILES:%.gt.txt=%.lstmf)
 	$(if $^,,$(error found no $(GROUND_TRUTH_DIR)/*.lstmf for $@))
