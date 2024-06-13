@@ -23,3 +23,10 @@ plot/ocrd*
 .DS_Store
 # ignore temporary training data
 *checkpoints*
+
+# ignore various traning files
+training-data/*ground-truth/*
+training-data/**/all-*
+training-data/**/list.*
+training-data/**/unicharset
+training-data/**/*.traineddata
