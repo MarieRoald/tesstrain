@@ -1,0 +1,203 @@
+Aboriginal Sans
+Aboriginal Sans Bold
+Aboriginal Sans Bold Italic
+Aboriginal Sans Italic
+Aboriginal Serif
+Aboriginal Serif Bold
+Aboriginal Serif Bold Italic
+Aboriginal Serif Italic
+Arial
+Arial Black
+Arial Bold
+Arial Bold Condensed
+Arial Bold Italic
+Arial Bold Italic Condensed
+Arial Condensed
+Arial Heavy
+Arial Italic
+Arial Italic Condensed
+C059
+C059 Bold
+C059 Bold Italic
+C059 Italic
+Comic Sans MS
+Comic Sans MS Bold
+Courier New
+Courier New Bold
+Courier New Bold Italic
+Courier New Italic
+DejaVu Math TeX Gyre
+DejaVu Sans
+DejaVu Sans Bold
+DejaVu Sans Bold Oblique
+DejaVu Sans Bold Oblique Semi-Condensed
+DejaVu Sans Bold Semi-Condensed
+DejaVu Sans Oblique
+DejaVu Sans Oblique Semi-Condensed
+DejaVu Sans Semi-Condensed
+DejaVu Sans Ultra-Light
+DejaVu Serif
+DejaVu Serif Bold
+DejaVu Serif Bold Italic
+DejaVu Serif Bold Italic Semi-Condensed
+DejaVu Serif Bold Semi-Condensed
+DejaVu Serif Italic
+DejaVu Serif Italic Semi-Condensed
+DejaVu Serif Semi-Condensed
+Georgia
+Georgia Bold
+Georgia Bold Italic
+Georgia Italic
+Helvetica
+Helvetica Bold Oblique
+Helvetica Oblique
+Impact Condensed
+Lato
+Lato Bold
+Lato Bold Italic
+Lato Heavy
+Lato Heavy Italic
+Lato Italic
+Lato Light
+Lato Light Italic
+Lato Medium
+Lato Medium Italic
+Lato Semi-Bold
+Lato Semi-Bold Italic
+Lato Ultra-Bold
+Lato Ultra-Bold Italic
+Liberation Sans
+Liberation Sans Bold
+Liberation Sans Bold Italic
+Liberation Sans Italic
+Liberation Sans Narrow Bold Condensed
+Liberation Sans Narrow Bold Italic Condensed
+Liberation Sans Narrow Condensed
+Liberation Sans Narrow Italic Condensed
+Liberation Serif
+Liberation Serif Bold
+Liberation Serif Bold Italic
+Liberation Serif Italic
+MesloLGS NF
+MesloLGS NF Bold
+MesloLGS NF Bold Italic
+MesloLGS NF Italic
+Nimbus Roman,
+Nimbus Roman, Bold
+Nimbus Roman, Bold Italic
+Nimbus Roman, Italic
+Nimbus Sans
+Nimbus Sans Bold
+Nimbus Sans Bold Italic
+Nimbus Sans Italic
+Nimbus Sans Narrow Bold Oblique Semi-Condensed
+Nimbus Sans Narrow Bold Semi-Condensed
+Nimbus Sans Narrow Oblique Semi-Condensed
+Nimbus Sans Narrow Semi-Condensed
+Noto Sans
+Noto Sans Bold
+Noto Sans Bold Italic
+Noto Sans Display
+Noto Sans Display Bold
+Noto Sans Display Bold Italic
+Noto Sans Display Italic
+Noto Sans Italic
+Noto Serif
+Noto Serif Bold
+Noto Serif Bold Italic
+Noto Serif Display
+Noto Serif Display Bold
+Noto Serif Display Bold Italic
+Noto Serif Display Italic
+Noto Serif Italic
+P052
+P052 Bold
+P052 Bold Italic
+P052 Italic
+Roboto
+Roboto Bold
+Roboto Bold Italic
+Roboto Heavy
+Roboto Heavy Italic
+Roboto Italic
+Roboto Light
+Roboto Light Italic
+Roboto Medium
+Roboto Medium Italic
+Times New Roman,
+Times New Roman, Bold
+Times New Roman, Bold Italic
+Times New Roman, Italic
+Trebuchet MS
+Trebuchet MS Bold
+Trebuchet MS Bold Italic
+Trebuchet MS Italic
+URW Bookman Light
+URW Bookman Light Italic
+URW Bookman Semi-Bold
+URW Bookman Semi-Bold Italic
+URW Gothic
+URW Gothic Oblique
+URW Gothic Semi-Bold
+URW Gothic Semi-Bold Oblique
+Ubuntu
+Ubuntu Bold
+Ubuntu Bold Condensed
+Ubuntu Bold Italic
+Ubuntu Bold Italic Condensed
+Ubuntu Condensed
+Ubuntu Italic
+Ubuntu Italic Condensed
+Ubuntu Light
+Ubuntu Light Condensed
+Ubuntu Light Italic
+Ubuntu Light Italic Condensed
+Ubuntu Medium
+Ubuntu Medium Condensed
+Ubuntu Medium Italic
+Ubuntu Medium Italic Condensed
+Ubuntu Sans
+Ubuntu Sans Bold
+Ubuntu Sans Bold Condensed
+Ubuntu Sans Bold Italic
+Ubuntu Sans Bold Italic Condensed
+Ubuntu Sans Condensed
+Ubuntu Sans Italic
+Ubuntu Sans Italic Condensed
+Ubuntu Sans Light
+Ubuntu Sans Light Condensed
+Ubuntu Sans Light Italic
+Ubuntu Sans Light Italic Condensed
+Ubuntu Sans Medium
+Ubuntu Sans Medium Condensed
+Ubuntu Sans Medium Italic
+Ubuntu Sans Medium Italic Condensed
+Ubuntu Sans Semi-Bold
+Ubuntu Sans Semi-Bold Condensed
+Ubuntu Sans Semi-Bold Italic
+Ubuntu Sans Semi-Bold Italic Condensed
+Ubuntu Sans Thin
+Ubuntu Sans Thin Condensed
+Ubuntu Sans Thin Italic
+Ubuntu Sans Thin Italic Condensed
+Ubuntu Sans Ultra-Bold
+Ubuntu Sans Ultra-Bold Condensed
+Ubuntu Sans Ultra-Bold Italic
+Ubuntu Sans Ultra-Bold Italic Condensed
+Ubuntu Sans Ultra-Light
+Ubuntu Sans Ultra-Light Condensed
+Ubuntu Sans Ultra-Light Italic
+Ubuntu Sans Ultra-Light Italic Condensed
+Ubuntu Thin
+Ubuntu Thin Condensed
+Ubuntu Thin Italic
+Ubuntu Thin Italic Condensed
+Ubuntu Ultra-Bold
+Ubuntu Ultra-Bold Condensed
+Ubuntu Ultra-Bold Italic
+Ubuntu Ultra-Bold Italic Condensed
+Verdana
+Verdana Bold
+Verdana Bold Italic
+Verdana Italic
+Z003 Medium Italic
