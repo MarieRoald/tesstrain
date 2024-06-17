@@ -1,3 +1,1 @@
-training-data/sme-ground-truth.tar.gz filter=lfs diff=lfs merge=lfs -text
-training-data/fin_sme-ground-truth.tar.gz filter=lfs diff=lfs merge=lfs -text
-training-data/nor_sme-ground-truth.tar.gz filter=lfs diff=lfs merge=lfs -text
+training-data/*-ground-truth.tar.gz filter=lfs diff=lfs merge=lfs -text
